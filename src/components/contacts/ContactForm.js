@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
+
 class ContactForm extends Component {
   state = { firstName: '', phone: '' }
   // change the state to be the user input
