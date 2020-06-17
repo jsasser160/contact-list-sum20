@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Header } from 'semantic-ui-react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = { contacts: [
+    { id: 1, firstName: 'John', phone: '555-555-5555' },
+    { id: 1, firstName: 'Sally', phone: '555-555-5555' },
+    { id: 1, firstName: 'Alex', phone: '555-555-5555' },
+  ] }
+
+  render() {
+    return(
+      <div>
+        <Header size="huge" color='blue' textAlign='center'>
+          Contact List
+        </Header>
+      </div>
+    )
+  }
 }
 
 export default App;
